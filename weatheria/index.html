@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatheria</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+    
+</head>
+<body>
+    <div class="container">
+    <div class="container1">
+    <input id ="Search"  type="text" placeholder="Enter City Name" >
+    <button id="searchIcon"for="Search"><img src="search.png" alt=""></button>
+    </div>
+    <div class="container2">
+        <div id="forimg">
+        <img  id = "imgid" src="clouds.png" alt="" >
+        </div>
+      <div id="text">
+      <h1 id = "temp"></h1>
+      <h1 id="city"></h1>
+    </div>
+    </div>
+    <div class="container1">
+        <div class="smallbox1">
+        <img src="humidity.png" alt="" width="50px" height="60px">
+        <div class="data">
+        <h2 id = "hum"></h2>
+        <h3>Humidity</h3>
+        </div>
+        </div>
+        <div class="smallbox1">
+            <img src="wind.png" alt="" width="50px" height="60px">
+            <div class="data">
+                <h2 id = "ws"></h2>
+                <h3>Wind Speed</h3>
+               </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+    </div>
+</body>
+</html>
