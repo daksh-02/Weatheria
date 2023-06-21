@@ -12,7 +12,7 @@ try {
 		return result
 	} catch (error) {
 		console.log("error found")
-		
+		show_alert();
 		return error
 	}
 }
@@ -21,9 +21,12 @@ let searchIconDiv = document.getElementById("searchIcon")
 searchIconDiv.onclick = () => {
 	let city = document.getElementById("Search").value
 	console.log(city)
-	getWeather(city).then(data =>{
+	getWeather(city).then((data,error) =>{
+		if(error){
+		 return;
+		}
 		sahiChangeHTML(data)
-	}).catch(show_alert())
+	})
 }
 
 
